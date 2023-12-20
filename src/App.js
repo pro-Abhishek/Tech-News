@@ -1,25 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Search from './Search';
+import Pagination from './Pagination';
+import Stories from './Stories';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return (<>
+      <div className="main">
+       <div className="tech_news">
+       <h1>TECH NEWS</h1>
+       <Search></Search>
+       <Pagination></Pagination>
+        <Stories></Stories>
+  
+
+       </div>
+
+      </div>
+  </>);
+  
 }
 
 export default App;
